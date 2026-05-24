@@ -1,0 +1,28 @@
+id: 019e5796-a006-7f92-befb-ebe89a33b9a3
+spec_id: META-001
+title: AI Prompts
+description: Default AI prompt templates. Edit these to customize how AI analyzes and improves requirements.
+status: Draft
+priority: Medium
+owner: ''
+feature: Uncategorized
+created_at: 2026-05-24T01:25:49.702960158Z
+modified_at: 2026-05-24T01:25:49.702960158Z
+req_type: Meta
+meta_subtype: Prompt
+relationships:
+- rel_type: Child
+  target_id: 019e5796-a006-7f92-befb-ebf357cdbdc7
+  created_at: 2026-05-24T01:25:49.702973664Z
+- rel_type: Child
+  target_id: 019e5796-a006-7f92-befb-ec0146fb506e
+  created_at: 2026-05-24T01:25:49.702974998Z
+- rel_type: Child
+  target_id: 019e5796-a006-7f92-befb-ec1babede375
+  created_at: 2026-05-24T01:25:49.702975848Z
+- rel_type: Child
+  target_id: 019e5796-a006-7f92-befb-ec2139a07f31
+  created_at: 2026-05-24T01:25:49.702977186Z
+- rel_type: Child
+  target_id: 019e5796-a006-7f92-befb-ec326cd7b349
+  created_at: 2026-05-24T01:25:49.702978319Z

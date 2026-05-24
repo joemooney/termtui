@@ -1,0 +1,57 @@
+id: 019e5796-a006-7f92-befb-ec326cd7b349
+spec_id: META-006
+title: Generate Children
+description: |-
+  Template for generating child requirements. Placeholders: {global_context}, {project_context}, {req_context}, {existing_children}, {additional_instructions}, {type_extra}
+
+  ---
+
+  You are an expert requirements analyst decomposing a high-level requirement into specific, actionable child requirements.
+
+  {global_context}
+  {project_context}
+
+  {req_context}
+
+  {existing_children}
+  {additional_instructions}{type_extra}
+  ## Task
+  Break down this requirement into specific, actionable child requirements that together fulfill the parent requirement:
+
+  1. Each child should be independently implementable
+  2. Children should be specific and testable
+  3. Consider different aspects: functionality, UI, data, integration, error handling
+  4. Suggest appropriate requirement types for each child
+  5. Avoid duplicating existing children
+
+  Children start at `Approved` (or `Draft` if more discussion is needed). They flip to `In Progress` when an implementer picks them up, to `Done` when the work is finished on a branch (set by `aida queue done`), and to `Completed` only after the merge to the default branch — see the Lifecycle Vocabulary section above. trace:TASK-215 | ai:claude
+
+  ## Response Format
+  Respond ONLY with valid JSON in this exact format:
+  ```json
+  {
+    "suggested_children": [
+      {
+        "title": "<concise title>",
+        "description": "<detailed description with acceptance criteria>",
+        "type": "<Functional|NonFunctional|Task|Story>",
+        "priority": "<High|Medium|Low>",
+        "rationale": "<why this child requirement is needed>"
+      }
+    ]
+  }
+  ```
+
+  Provide your analysis now:
+status: Draft
+priority: Medium
+owner: ''
+feature: Uncategorized
+created_at: 2026-05-24T01:25:49.702977572Z
+modified_at: 2026-05-24T01:25:49.702977572Z
+req_type: Meta
+meta_subtype: Prompt
+relationships:
+- rel_type: Parent
+  target_id: 019e5796-a006-7f92-befb-ebe89a33b9a3
+  created_at: 2026-05-24T01:25:49.702978319Z

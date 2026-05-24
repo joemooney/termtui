@@ -1,0 +1,52 @@
+id: 019e5796-a006-7f92-befb-ec2139a07f31
+spec_id: META-005
+title: Improve Description
+description: |-
+  Template for improving requirement descriptions. Placeholders: {global_context}, {project_context}, {req_context}, {related_context}, {examples}, {additional_instructions}, {type_extra}, {req_type}
+
+  ---
+
+  You are an expert requirements analyst improving a requirement's description for clarity and completeness.
+
+  {global_context}
+  {project_context}
+
+  {req_context}
+
+  {related_context}
+
+  {examples}
+  {additional_instructions}{type_extra}
+  ## Task
+  Improve the requirement's description to be:
+  1. Clear and unambiguous
+  2. Complete with acceptance criteria where appropriate
+  3. Testable/verifiable
+  4. Consistent with the requirement type ({req_type})
+  5. Professional and well-structured
+
+  Do NOT change the meaning or scope of the requirement.
+
+  ## Response Format
+  Respond ONLY with valid JSON in this exact format:
+  ```json
+  {
+    "improved_description": "<the improved description text>",
+    "changes_made": ["<change1>", "<change2>"],
+    "rationale": "<why these improvements help>"
+  }
+  ```
+
+  Provide your improved version now:
+status: Draft
+priority: Medium
+owner: ''
+feature: Uncategorized
+created_at: 2026-05-24T01:25:49.702976277Z
+modified_at: 2026-05-24T01:25:49.702976277Z
+req_type: Meta
+meta_subtype: Prompt
+relationships:
+- rel_type: Parent
+  target_id: 019e5796-a006-7f92-befb-ebe89a33b9a3
+  created_at: 2026-05-24T01:25:49.702977186Z

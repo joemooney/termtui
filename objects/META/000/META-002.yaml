@@ -1,0 +1,59 @@
+id: 019e5796-a006-7f92-befb-ebf357cdbdc7
+spec_id: META-002
+title: Evaluate Requirement
+description: |-
+  Template for evaluating requirement quality. Placeholders: {global_context}, {project_context}, {req_context}, {related_context}, {additional_instructions}, {type_extra}
+
+  ---
+
+  You are an expert requirements analyst evaluating a software requirement for quality and completeness.
+
+  {global_context}
+  {project_context}
+
+  {req_context}
+
+  {related_context}
+  {additional_instructions}{type_extra}
+  ## Task
+  Evaluate this requirement and provide a structured assessment. Consider:
+  1. Clarity: Is the requirement clearly stated and unambiguous?
+  2. Completeness: Does it have sufficient detail for implementation?
+  3. Testability: Can this requirement be verified/tested?
+  4. Consistency: Does it align with related requirements?
+  5. Feasibility: Is it realistic and achievable?
+
+  ## Response Format
+  Respond ONLY with valid JSON in this exact format:
+  ```json
+  {
+    "quality_score": <1-10>,
+    "issues": [
+      {
+        "type": "<vague_language|missing_criteria|ambiguous|incomplete|inconsistent|untestable>",
+        "severity": "<low|medium|high>",
+        "text": "<description of the issue>",
+        "suggestion": "<how to fix it>"
+      }
+    ],
+    "strengths": ["<strength1>", "<strength2>"],
+    "suggested_improvements": {
+      "description": "<improved description text if needed, or null>",
+      "rationale": "<why this improvement helps>"
+    }
+  }
+  ```
+
+  Provide your evaluation now:
+status: Draft
+priority: Medium
+owner: ''
+feature: Uncategorized
+created_at: 2026-05-24T01:25:49.702972116Z
+modified_at: 2026-05-24T01:25:49.702972116Z
+req_type: Meta
+meta_subtype: Prompt
+relationships:
+- rel_type: Parent
+  target_id: 019e5796-a006-7f92-befb-ebe89a33b9a3
+  created_at: 2026-05-24T01:25:49.702973664Z

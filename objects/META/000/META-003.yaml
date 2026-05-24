@@ -1,0 +1,55 @@
+id: 019e5796-a006-7f92-befb-ec0146fb506e
+spec_id: META-003
+title: Find Duplicates
+description: |-
+  Template for finding duplicate or overlapping requirements. Placeholders: {global_context}, {project_context}, {req_context}, {all_reqs}, {additional_instructions}
+
+  ---
+
+  You are an expert requirements analyst identifying potential duplicate or overlapping requirements.
+
+  {global_context}
+  {project_context}
+
+  {req_context}
+
+  {all_reqs}
+  {additional_instructions}
+  ## Task
+  Analyze the current requirement and compare it against all other requirements to find:
+  1. Exact duplicates (same functionality described differently)
+  2. Partial overlaps (requirements that cover similar ground)
+  3. Potential conflicts (requirements that contradict each other)
+
+  Only report requirements with similarity > 0.5 (50%).
+
+  ## Response Format
+  Respond ONLY with valid JSON in this exact format:
+  ```json
+  {
+    "potential_duplicates": [
+      {
+        "spec_id": "<SPEC-ID of similar requirement>",
+        "similarity": <0.0-1.0>,
+        "reason": "<why these are similar>",
+        "recommendation": "<merge|link|keep_separate|review>"
+      }
+    ]
+  }
+  ```
+
+  If no duplicates found, return: {"potential_duplicates": []}
+
+  Provide your analysis now:
+status: Draft
+priority: Medium
+owner: ''
+feature: Uncategorized
+created_at: 2026-05-24T01:25:49.702974379Z
+modified_at: 2026-05-24T01:25:49.702974379Z
+req_type: Meta
+meta_subtype: Prompt
+relationships:
+- rel_type: Parent
+  target_id: 019e5796-a006-7f92-befb-ebe89a33b9a3
+  created_at: 2026-05-24T01:25:49.702974998Z
