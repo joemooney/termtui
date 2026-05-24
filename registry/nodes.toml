@@ -1,0 +1,7 @@
+[[nodes]]
+id = "1"
+user_id = 1
+hostname = "spock"
+email = "Joe.Mooney@gd-ms.com"
+clone_path = "/home/joe.mooney/ai/termtui"
+registered = "2026-05-24T01:25:50.869852751Z"
